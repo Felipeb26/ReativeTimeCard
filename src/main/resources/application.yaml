@@ -1,0 +1,18 @@
+server:
+  compression:
+    enabled: true
+  port: 9091
+  shutdown: IMMEDIATE
+  servlet:
+    context-path: /batsworks
+
+spring:
+  main:
+    banner-mode: OFF
+  application:
+    name: 'Reactive Batsworks TimeCard'
+  data:
+    mongodb:
+      auto-index-creation: true
+      database: batsworks
+      uri: mongodb+srv://${USER}:${PASS}@${DB}.egw5k9l.mongodb.net/?retryWrites=true&w=majority
